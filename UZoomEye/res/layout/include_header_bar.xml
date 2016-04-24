@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:background="@color/baisc_color" 
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/baisc_color" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout 
+            android:id="@+id/ll_head_back"
+            android:layout_width="70dip"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            >
+            <ImageView 
+            android:id="@+id/iv_head_back" 
+            android:layout_marginLeft="15dip"
+            android:layout_centerVertical="true" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+             android:src="@drawable/back_arrows" 
+              />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp"
+             android:textColor="@color/white" 
+             android:id="@+id/tv_head_title" 
+             android:text="@string/app_name"
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:singleLine="true" 
+              android:layout_centerInParent="true" />
+        <ImageView android:id="@+id/activity_header_progressbar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@+id/tvHeadTitle" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/share_ly"  android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/two_img" android:layout_width="wrap_content" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" 
+            android:orientation="horizontal" 
+            android:id="@+id/save_ly" 
+            android:paddingLeft="10.0dip" 
+            android:paddingRight="10.0dip" 
+            android:visibility="visible" 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent" 
+            android:layout_alignParentRight="true">
+            <TextView android:textSize="16.0sp" 
+                android:textColor="@color/white" 
+                android:id="@+id/tv_head_title_right" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="ZoomEye" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

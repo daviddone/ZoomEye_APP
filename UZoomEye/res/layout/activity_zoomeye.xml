@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+     <include layout="@layout/include_header_bar"></include>
+	<EditText
+	    android:layout_marginTop="12dip"
+            android:id="@+id/et_bug_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+			android:gravity="top"
+            android:hint="搜索"
+            android:background="@color/text_gray"
+			android:inputType="text"
+            android:maxLength="300"
+            android:padding="5dp" />
+</LinearLayout>

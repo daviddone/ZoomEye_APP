@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+<include android:id="@+id/in_head" layout="@layout/include_header_bar"></include>
+    </LinearLayout>
+   <!--  <ProgressBar
+      	style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        /> -->
+        <ProgressBar  
+        style="?android:attr/progressBarStyleHorizontal"  
+        android:id="@+id/myProgressBar"
+        android:layout_width="fill_parent"  
+        android:layout_height="2.5dp"  
+        android:max="100"  
+        android:progress="80"   
+        android:progressDrawable="@drawable/html_progress_drawable"   
+        android:visibility="visible"/>  
+    <!-- 旋转进度条 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		
+        <LinearLayout
+            android:id="@+id/loadingWebView"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载信息..." />
+        </LinearLayout>
+
+       <WebView
+		android:id="@+id/webView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"></WebView>
+    </FrameLayout>
+	
+
+</LinearLayout>
